@@ -6,7 +6,7 @@ Permite cifrar, descifrar y realizar criptoanálisis por fuerza bruta desde una 
 ## 🚀 Instalación
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tuusuario/Cifrado_Cesar.git
+   git clone https://github.com/Karolme09/Cifrado_Cesar.git
    cd cifrado-cesar-flask
 
 2. Instalar depencias necesarias:
