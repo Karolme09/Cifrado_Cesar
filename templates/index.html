@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cifrado algoritmo César</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cifrado Algoritmo César</h1>
+        <form method="POST">
+            <label>Palabra/texto:</label>
+            <textarea name="texto" required></textarea>
+
+            <label>Llave (1 a 26):</label>
+            <input type="number" name="llave" min="1" max="26">
+
+            <div class="buttons">
+                <button type="submit" name="accion" value="cifrar">Cifrar</button>
+                <button type="submit" name="accion" value="descifrar">Descifrar</button>
+                <button type="submit" name="accion" value="criptoanalisis">Criptoanálisis</button>
+            </div>
+        </form>
+
+        <h2>Resultado:</h2>
+        <pre>{{ resultado }}</pre>
+
+        {% if aviso %}
+            <p style="color:red; font-weight:bold">{{ aviso }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
